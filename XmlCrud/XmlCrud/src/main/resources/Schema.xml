@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Municipalite>
+    <Citoyens>
+        <Citoyen>
+            <CIN>12345678</CIN>
+            <email>ahmed@example.com</email>
+            <password>pass123</password>
+            <nom>Ahmed</nom>
+            <prenom>Ben Ali</prenom>
+            <role>citoyen</role>
+            <Adresse>Rue de Tunis</Adresse>
+            <Rue>Centre-ville</Rue>
+        </Citoyen>
+    </Citoyens>
+
+    <Agents>
+        <Agent>
+            <CIN>11112222</CIN>
+            <email>agent1@example.com</email>
+            <password>agentpass</password>
+            <nom>Ali</nom>
+            <prenom>Hajri</prenom>
+            <role>agent</role>
+            <Disponibilite>true</Disponibilite>
+            <service>Nettoyage</service>
+        </Agent>
+    </Agents>
+
+    <Secretaires>
+        <Secretaire>
+            <CIN>22223333</CIN>
+            <email>secretaire1@example.com</email>
+            <password>secretpass</password>
+            <nom>Leila</nom>
+            <prenom>Ghribi</prenom>
+            <role>secretaire</role>
+        </Secretaire>
+    </Secretaires>
+
+    <ChefsGeneraux>
+        <ChefGenerale>
+            <CIN>55556666</CIN>
+            <email>chefgen@example.com</email>
+            <password>chefpass</password>
+            <nom>Mohamed</nom>
+            <prenom>Karoui</prenom>
+            <role>chef</role>
+        </ChefGenerale>
+    </ChefsGeneraux>
+
+    <ChefsInformatiques>
+        <ChefInformatique>
+            <CIN>66667777</CIN>
+            <email>chefinf@example.com</email>
+            <password>infopass</password>
+            <nom>Foued</nom>
+            <prenom>Maalej</prenom>
+            <role>chefinfo</role>
+        </ChefInformatique>
+    </ChefsInformatiques>
+
+    <Demandes>
+        <Demande>
+            <identifiant>1</identifiant>
+            <citoyenRef>12345678</citoyenRef>
+            <DateDeSoumission>2025-11-26</DateDeSoumission>
+            <image>iVBORw0KGgoAAAANSUhEUgAAAAUA</image>
+            <localisation>Tunis</localisation>
+        </Demande>
+        <Demande>
+            <identifiant>2</identifiant>
+            <citoyenRef>12345678</citoyenRef>
+            <DateDeSoumission>2025-11-30</DateDeSoumission>
+            <image>iVBORw0KGgoAAAANSUhEUgAA</image>
+            <localisation>Rue ABC, Ville XYZ</localisation>
+        </Demande>
+    </Demandes>
+
+    <Notifications>
+        <Notification>
+            <idN>1</idN>
+            <citoyenRef>12345678</citoyenRef>
+            <contenue>Votre demande est acceptée</contenue>
+        </Notification>
+    </Notifications>
+
+    <Interventions>
+        <Intervention>
+            <id>1</id>
+            <budget>500</budget>
+            <dateDebut>2025-10-01</dateDebut>
+            <type>Urgent</type>
+            <urgence>3</urgence>
+            <CINAgent>11112222</CINAgent>
+            <CINSecretaire>22223333</CINSecretaire>
+        </Intervention>
+    </Interventions>
+
+    <RapportsDeTravaille>
+        <RapportDeTravaille>
+            <CINAgent>11112222</CINAgent>
+            <cout>150</cout>
+            <Duree>4</Duree>
+            <description>Nettoyage du parc</description>
+            <image>iVBORw0KGgoAAAANSUhEUgAAAAUA</image>
+            <InterventionRef>1</InterventionRef>
+        </RapportDeTravaille>
+    </RapportsDeTravaille>
+
+
+    <Equipements>
+        <Equipement>
+            <id>1</id>
+            <nom>Balai</nom>
+            <disponible>true</disponible>
+        </Equipement>
+    </Equipements>
+
+    <EquipementInterventions>
+        <EquipementIntervention>
+            <equipementRef>1</equipementRef>
+            <interventionRef>1</interventionRef>
+        </EquipementIntervention>
+    </EquipementInterventions>
+</Municipalite>
